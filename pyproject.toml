@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "newsrss"
+version = "0.1.0"
+description = "NewsRSS reader"
+authors = ["Simone Vazzoler <svazzole@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+gnews = "^0.2.7"
+newspaper3k = "^0.2.8"
+rich = "^12.4.4"
+textual = "^0.1.18"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+mypy = "^0.961"
+flake8 = "^4.0.1"
+pre-commit = "^2.19.0"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
